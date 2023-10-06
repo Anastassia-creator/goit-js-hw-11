@@ -4,13 +4,7 @@ import throttle  from "lodash.throttle";
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-const input = document.querySelector(".search-input");
-
-const btnUp = document.querySelector('.go-up');
-btnUp.addEventListener('click', () => {
-   window.scrollTo(0, 0);
-   input.value = "";
-});
+import { btnUp } from "./helpers/scroll";
 
 var lightbox = new SimpleLightbox('.gallery a');
 const API_KEY = "39616729-48f7c3a0adac5813f5f0e61de";
